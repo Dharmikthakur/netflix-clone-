@@ -1,0 +1,132 @@
+.card {
+  position: relative;
+  min-width: 240px;
+  height: 135px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1;
+}
+
+.cardLarge {
+  height: 250px;
+  min-width: 166px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-card);
+  border-radius: 4px;
+  padding: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 2;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: scale(1.4) translateY(-20px);
+  z-index: 99;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translateY(100%);
+  pointer-events: auto;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: -4px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.actionsLeft {
+  display: flex;
+  gap: 8px;
+}
+
+.circleBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: rgba(42, 42, 42, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.circleBtn:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.rating {
+  color: #46d369;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.age {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 5px;
+  font-size: 11px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-width: 140px;
+    height: 210px;
+  }
+  
+  .card:hover {
+    transform: none;
+  }
+  
+  .overlay {
+    display: none;
+  }
+}

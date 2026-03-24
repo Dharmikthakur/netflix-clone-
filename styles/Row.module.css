@@ -1,0 +1,79 @@
+.rowContainer {
+  margin-top: 40px;
+  padding: 0 48px;
+}
+
+.rowTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e5e5e5;
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  overflow-x: scroll;
+  overflow-y: visible;
+  padding: 20px 0;
+  margin: -20px 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+.row::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s, background 0.2s;
+}
+
+.wrapper:hover .arrow {
+  opacity: 1;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.arrowLeft {
+  left: -48px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.arrowRight {
+  right: -48px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .rowContainer { padding: 0 20px; }
+  .arrowLeft { left: -20px; }
+  .arrowRight { right: -20px; }
+  .arrow { width: 30px; }
+  .rowTitle { font-size: 16px; }
+}

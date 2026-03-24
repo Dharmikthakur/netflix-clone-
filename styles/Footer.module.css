@@ -1,0 +1,63 @@
+.footer {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 60px 4%;
+  color: #808080;
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.socials svg {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.socials svg:hover {
+  opacity: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 16px;
+  margin-bottom: 24px;
+  font-size: 13px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.serviceBtn {
+  background: transparent;
+  border: 1px solid #808080;
+  color: #808080;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.serviceBtn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.copyright {
+  font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

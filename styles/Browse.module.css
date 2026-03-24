@@ -1,0 +1,59 @@
+.page {
+  background: var(--bg-dark);
+  min-height: 100vh;
+}
+
+.rows {
+  padding-bottom: 80px;
+  margin-top: -80px;
+  position: relative;
+  z-index: 2;
+}
+
+.searchPage {
+  padding: 120px 48px 80px;
+  min-height: 100vh;
+}
+
+.searchTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: #e5e5e5;
+}
+
+.searchGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.searchCard {
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.searchCard:hover {
+  transform: scale(1.04);
+}
+
+.searchPoster {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+
+.searchCardTitle {
+  padding: 8px 4px;
+  font-size: 13px;
+  color: #ccc;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .searchPage {
+    padding: 100px 16px 80px;
+  }
+}
