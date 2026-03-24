@@ -36,7 +36,7 @@ export default function Login() {
         <div className={styles.bg} />
         <nav className={styles.nav}>
           <Link href="/">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" height="32" width="120" />
+            <img src="/assets/logo.png" alt="Netflix" height="32" width="120" />
           </Link>
         </nav>
 

@@ -34,7 +34,7 @@ export default function Home() {
         {/* Navbar */}
         <nav className={styles.nav}>
           <div className={styles.logo}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" height="32" width="120" />
+            <img src="/assets/logo.png" alt="Netflix" height="32" width="120" />
           </div>
           <Link href="/login">
             <button className="btn btn-primary" style={{ padding: '8px 20px', fontSize: 14 }}>
@@ -73,7 +73,7 @@ export default function Home() {
               <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
             </div>
             <div className={styles.featureImg}>
-              <span className={styles.featureIcon}>📺</span>
+              <img src="/assets/devices.png" alt="TV" style={{ maxWidth: '100%', height: 'auto' }} />
             </div>
           </div>
           <div className={`${styles.feature} ${styles.featureReverse}`}>
@@ -82,7 +82,7 @@ export default function Home() {
               <p>Save your favourites easily and always have something to watch.</p>
             </div>
             <div className={styles.featureImg}>
-              <span className={styles.featureIcon}>📱</span>
+              <img src="/assets/download.png" alt="Download" style={{ maxWidth: '100%', height: 'auto' }} />
             </div>
           </div>
           <div className={styles.feature}>
@@ -91,7 +91,7 @@ export default function Home() {
               <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
             </div>
             <div className={styles.featureImg}>
-              <span className={styles.featureIcon}>💻</span>
+              <img src="/assets/devices.png" alt="Devices" style={{ maxWidth: '100%', height: 'auto' }} />
             </div>
           </div>
         </div>

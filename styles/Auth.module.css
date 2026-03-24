@@ -11,7 +11,7 @@
 .bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/c0f6a3a6-4e10-4924-a72b-3f9fc2234e7e/4ea54eca-8f9b-4af4-bcc8-db4cfbc8aff8/IN-en-20240212-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+  background-image: url('/assets/background.png');
   background-size: cover;
   background-position: center;
   opacity: 0.4;

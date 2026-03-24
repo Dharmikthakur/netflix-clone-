@@ -41,7 +41,7 @@ export default function Navbar({ user, onSearch, searchQuery }) {
       {/* Left */}
       <div className={styles.left}>
         <Link href="/browse" className={styles.logo}>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" height="28" width="108" />
+          <img src="/assets/logo.png" alt="Netflix" height="28" width="108" />
         </Link>
         <div className={styles.navLinks}>
           {navLinks.map((l) => (
